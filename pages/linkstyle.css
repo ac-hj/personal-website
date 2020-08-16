@@ -83,7 +83,7 @@ header {
 
 	#movie {
 		opacity: 0.35;
-		background-image: url("Moviesample.png");
+		background-image: url("../resources/Moviesample.png");
 		background-size: cover;
 		margin-top: 3vh;
 		width: 80vw;
@@ -128,7 +128,7 @@ header {
 
 	#safe {
 		opacity: 0.35;
-		background-image: url("safepic.png");
+		background-image: url("../resources/safepic.png");
 		background-size: cover;
 		margin-top: 3vh;
 		width: 80vw;
@@ -174,7 +174,7 @@ header {
 
 	#website {
 		opacity: 0.35;
-		background-image: url("website.png");
+		background-image: url("../resources/website.png");
 		background-position: center;
 		background-size: cover;
 		margin-top: 3vh;
@@ -294,7 +294,7 @@ header {
 
 	#movie {
 		opacity: 0.35;
-		background-image: url("Moviesample.png");
+		background-image: url("../resources/Moviesample.png");
 		width: 80em;
 		height: 30em;
 		z-index: 0;
@@ -337,7 +337,7 @@ header {
 
 	#safe {
 		opacity: 0.35;
-		background-image: url("safepic.png");
+		background-image: url("../resources/safepic.png");
 		background-repeat: no-repeat;
 		background-size: 100%;
 		width: 80em;
@@ -380,7 +380,7 @@ header {
 
 	#website {
 		opacity: 0.35;
-		background-image: url("website.png");
+		background-image: url("../resources/website.png");
 		background-repeat: no-repeat;
 		background-size: 100%;
 		width: 80em;
