@@ -1,0 +1,106 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Verdana", sans-serif;
+  background-color: seashell;
+  font-size: 15px;
+}
+
+header {
+	width: 5em;
+	margin: 0px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 13px;
+	padding-right: 0px;
+	display; flex;
+	position: absolute;
+	justify-content: start;
+}
+
+#Intro {
+	width: absolute;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: seashell;
+}
+
+#Intro h1 {
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  font-size: 4vw;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end end;
+  animation-delay: -2.1s, -2s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+.dropdown {
+  overflow: hidden;
+  width: 5em;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border-radius: 25%;
+  border:none;
+  outline: none;
+  color:#695438 ;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.dropbtn:hover {
+  background-color: orange;
+}
+
+#navigation {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#navigation a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#navigation a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover #navigation {
+  display: block;
+}
+
+

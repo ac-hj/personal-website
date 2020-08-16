@@ -1,0 +1,585 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Verdana", sans-serif;
+  background-color: seashell;
+  font-size: 15px;
+}
+
+header {
+	width: 5em;
+	margin: 0px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 13px;
+	padding-right: 0px;
+	display; flex;
+	position: absolute;
+	justify-content: start;
+}
+
+/* Navigation bar */
+.dropdown {
+  overflow: hidden;
+  width: 5em;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border-radius: 25%;
+  border:none;
+  outline: none;
+  color: #695438;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.dropbtn:hover {
+  background-color: orange;
+}
+
+#navigation {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#navigation a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#navigation a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover #navigation {
+  display: block;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+
+/*Elements for wider screens*/
+@media only screen and (min-width: 1025px) {
+
+	/* Passion tab */
+	#part1 {
+	  height: 50vh;
+	  width: 20em;
+	  background-color: #EEC631;
+	  font-weight: bold;
+	  font-size: 20px;
+	  letter-spacing: .15em;
+	  display:flex;
+	  flex-direction: column;
+	  justify-content: flex-end;
+	  align-items: center;
+	  margin-left: 21em;
+	  position: absolute;
+	}
+
+	#part1:hover {
+	  height: 38em;
+	  width: 20em;
+	  font-weight: bold;
+	  font-size: 20px;
+	  letter-spacing: .15em;
+	  animation: load 1s both; 
+	}
+
+
+	@keyframes load{
+	   0%{
+	        transform: translateY(100px);
+	        opacity: 0;
+	 }
+	   100%{
+	        opacity: .9;
+	        transform: translateY(0px);
+	 }
+	}
+
+	#part1txt {
+		font-size: 4.3em;
+		color: white;
+		border-radius: 0%;
+		margin-top: 0.9em;
+		bottom: 0em;
+	}
+
+	#passion {
+		width: 10em;
+		height: 14em;
+		opacity: 100%;
+		left: 0;
+		margin-bottom: 20em;
+		margin-left: 20em;
+		z-index: -1;
+		position: absolute;
+		visibility: hidden;
+	}
+
+	#part1:hover #passion{
+	  visibility: visible;
+	}
+
+	#pa {
+		color: #A57E0F;
+		list-style-type: square;
+	}
+
+	/* Skills tab */
+	#part2 {
+	  height: 16em;
+	  width: 10em;
+	  background-color: #978159;
+	  font-weight: bold;
+	  font-size: 20px;
+	  letter-spacing: .15em;
+	  opacity: 80%;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: flex-start;
+	  align-items: center;
+	  margin-top: 19em;
+	  position: absolute;
+	  right: 0;
+	}
+
+	#part2:hover {
+	  height: 16em;
+	  width: 30em;
+	  font-weight: bold;
+	  font-size: 20px;
+	  letter-spacing: .15em;
+	  opacity: 100%;
+	  animation: loadtwo 1s both;
+	}
+
+
+	@keyframes loadtwo{
+	   0%{
+	        transform: translateX(100px);
+	        opacity: 0;
+	 }
+	   100%{
+	        opacity: .9;
+	        transform: translateX(0px);
+	 }
+	}
+
+	#part2txt {
+		font-size: 4.3em;
+		color: white;
+		border-radius: 0%;
+		transform: rotate(90deg);
+	}
+
+	#pl {
+		color: #423014;
+		list-style-type: square;
+		visibility: hidden;
+		margin: 0;
+	}
+
+	#part2:hover #pl {
+	  visibility: visible;
+	}
+
+	/* Hobbies tab */
+	#part3 {
+	  height: 10em;
+	  width: 21em;
+	  background-color: #B6EBD7;
+	  font-weight: bold;
+	  font-size: 20px;
+	  letter-spacing: .15em;
+	  display:flex;
+	  flex-direction: column;
+	  justify-content: flex-start;
+	  align-items: center;
+	  margin-left: 21em;
+	  position: absolute;
+	  bottom: 0;
+	}
+
+	#part3:hover {
+	  height: 22em;
+	  width: 21em;
+	  font-weight: bold;
+	  font-size: 20px;
+	  letter-spacing: .15em;
+	  animation: loadthree 1s both; 
+	  margin-top: 30em;
+	}
+
+
+	@keyframes loadthree {
+	   0%{
+	        transform: translateY(-100px);
+	        opacity: 0;
+	 }
+	   100%{
+	        opacity: .9;
+	        transform: translateY(0px);
+	 }
+	}
+
+	#part3txt {
+		font-size: 4.3em;
+		color: white;
+		border-radius: 0%;
+		top: 0em;
+		z-index: 1;
+	}
+
+	#cali {
+		width: 10em;
+		height: 16em;
+		opacity: 100%;
+		margin-bottom: 20em;
+		left: 0em;
+		margin-left: 21em;
+		z-index: -1;
+		position: absolute;
+		visibility: hidden;
+	}
+
+	#part3:hover #cali{
+	  visibility: visible;
+	}
+
+	#ho {
+		color: #22BDA8;
+		visibility: hidden;
+		margin-top: 3em;
+		list-style-type: square;
+	}
+
+	#part3:hover #ho {
+	  visibility: visible;
+	}
+
+	/* Caption */
+	#click {
+		font-family: 'Sacramento', cursive;
+		position: absolute;
+		left: 0;
+		margin-left: 3vw;
+		margin-top: 10em;
+		width: 10em;
+		text-align: center;
+		font-size: 2.5em;
+		visibility: visible;
+	}
+}
+
+/*Elements for narrower screens*/
+@media only screen and (max-width: 1024px) {
+	/* Passion tab */
+	#part1 {
+	  width: 40vw;
+	  height: 60vh;
+	  background-color: #EEC631;
+	  font-weight: bold;
+	  font-size: 1.5vw;
+	  letter-spacing: .8vw;
+	  display:flex;
+	  flex-direction: column;
+	  justify-content: flex-end;
+	  align-items: center;
+	  margin-left: 30vw;
+	  position: absolute;
+	}
+
+	#part1:hover {
+	  height: 80vh;
+	  width: 40vw;
+	  font-weight: bold;
+	  font-size: 1.5vw;
+	  letter-spacing: .8vw;
+	  animation: load 1s both; 
+	}
+
+
+	@keyframes load{
+	    0%{
+	        transform: translateY(100px);
+	        opacity: 0;
+	    }
+	    100%{
+	        opacity: .9;
+	        transform: translateY(0px);
+		}
+	}
+
+	#part1txt {
+		font-size: 7vw;
+		color: white;
+		border-radius: 0%;
+		margin-top: 0.9em;
+		bottom: 0em;
+	}
+
+	#passion {
+		width: 15vw;
+		height: 12vh;
+		opacity: 100%;
+		left: 0em;
+		margin-left: 40vw;
+		z-index: -1;
+		position: absolute;
+		visibility: hidden;
+	}
+
+	#pa {
+		font-size: 1.2vh;
+		color: #A57E0F;
+		list-style-type: square;
+		visibility: hidden;
+	}
+
+	#part1:hover #passion{
+	  visibility: visible;
+	}
+
+	#part1:hover #pa {
+		visibility: visible;
+	}
+
+	#part1:hover #click {
+		visibility: hidden;
+	}
+
+	/* Skills tab */
+	#part2 {
+	  height: 25vh;
+	  width: 17vw;
+	  background-color: #978159;
+	  font-weight: bold;
+	  font-size: 1.5vw;
+	  letter-spacing: .8vw;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: flex-start;
+	  align-items: center;
+	  margin-top: 55vh;
+	  position: absolute;
+	  right: 0;
+	}
+
+	#part2:hover {
+	  height: 25vh;
+	  width: 60vw;
+	  font-weight: bold;
+	  font-size: 1.5vw;
+	  letter-spacing: .8vw;
+	  margin-top: 55vh;
+	  animation: loadtwo 1s both;
+	}
+
+	#part2:hover #click {
+		visibility: hidden;
+	}
+
+	@keyframes loadtwo{
+	   0%{
+	        transform: translateX(100px);
+	        opacity: 0;
+	 }
+	   100%{
+	        opacity: .9;
+	        transform: translateX(0px);
+	 }
+	}
+
+	#part2txt {
+		margin: 0;
+		font-size: 4.3em;
+		color: white;
+		border-radius: 0%;
+		transform: rotate(90deg);
+	}
+
+	#pl {
+		color: #423014;
+		list-style-type: square;
+		visibility: hidden;
+		margin: 0;
+	}
+
+	#part2:hover #pl {
+	  visibility: visible;
+	}
+
+
+	/* Hobbies tab */
+	#part3 {
+	  height: 25vh;
+	  width: 45vw;
+	  background-color: #B6EBD7;
+	  font-weight: bold;
+	  font-size: 1.5vw;
+	  letter-spacing: 0.8vw;
+	  display:flex;
+	  flex-direction: column;
+	  justify-content: flex-start;
+	  align-items: center;
+	  margin-left: 30vw;
+	  margin-top: 90vh;
+	  position: absolute;
+	}
+
+	#part3:hover {
+	  height: 30vh;
+	  width: 45vw;
+	  font-weight: bold;
+	  font-size: 1.5vw;
+	  letter-spacing: .8vw;
+	  animation: loadthree 1s both; 
+	  margin-left: 30vw;
+	  margin-top: 90vh;
+	}
+
+	@keyframes loadthree {
+	   0%{
+	        transform: translateY(-100px);
+	        opacity: 0;
+	 }
+	   100%{
+	        opacity: .9;
+	        transform: translateY(0px);
+	 }
+	}
+
+	#part3txt {
+		font-size: 7vw;
+		color: white;
+		border-radius: 0%;
+		top: 0em;
+		z-index: 1;
+	}
+
+	#cali {
+		width: 15vw;
+		height: 12vh;
+		opacity: 100%;
+		right: 0em;
+		margin-right: 45vw;
+		z-index: -1;
+		position: absolute;
+		visibility: hidden;
+	}
+
+	#part3:hover #cali{
+	  visibility: visible;
+	}
+
+	#ho {
+		font-size: 1.2vh;
+		color: #22BDA8;
+		visibility: hidden;
+		list-style-type: square;
+	}
+
+	#part3:hover #ho{
+		visibility: visible;
+	}
+
+	#click {
+		font-family: 'Sacramento', cursive;
+		position: absolute;
+		margin-left: 15vw;
+		margin-top: 50vh;
+		text-align: center;
+		font-size: 3vw;
+	}
+}
+
+/* Links at the bottom */
+#icon {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+img {
+	width: 2em;
+	height: 1.7em;
+}
+
+
+#linkedin {
+	animation: loadsp 1s both;
+	font-size: 2em;
+	float: right;
+	margin-top: 1em;
+}
+
+#git {
+	animation: loadsp 1s both;
+	animation-delay: 0.2s;
+	margin-top: 0.0em;
+	margin-top: 1em;
+}
+
+#email {
+	animation: loadsp 1s both;
+	animation-delay: 0.4s;
+	margin-top: 1em;
+}
+
+#linked {
+	font-family: 'PT Sans', sans-serif;
+	color: black;
+	text-decoration: none;
+	margin: 0.0em 0.0em;
+}
+
+@keyframes loadsp {
+   0%{
+        transform: translateX(100px);
+        visibility: hidden;
+        opacity: 0;
+ }
+   100%{
+        opacity: .9;
+        visibility: visible;
+        transform: translateX(0px);
+ }
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
